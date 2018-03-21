@@ -15,6 +15,13 @@ set colorcolumn=80 " colorize the 80th column
 set hlsearch " highlight search matches; type `nohl` to clear
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " Press Space to turn off highlighting and clear any message already displayed.
 
+" ---------------------------------------------------------------------
+" Indentation
+" ---------------------------------------------------------------------
+filetype plugin indent on
+set tabstop=4 " replace existing tabs with 4 spaces
+set shiftwidth=4 " use 4 spaces when indenting with '>'
+set expandtab " insert 4 spaces when pressing tab
 
 " ---------------------------------------------------------------------
 " Vundle
